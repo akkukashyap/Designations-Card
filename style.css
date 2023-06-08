@@ -1,0 +1,157 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(246, 255, 255);
+}
+.box
+{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 5px;
+       position: relative;
+       z-index: 100;
+    
+}
+.box .one
+{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 5px;
+    height: 320px;
+    width: 300px;
+    border-radius: 40px;
+    background-image: linear-gradient( rgb(10, 40, 148) , rgb(35, 32, 35));
+}
+#akku
+{
+    margin-right: 800px;
+    margin-top: -290px;
+   
+}
+#aditi
+{
+    margin-right: -20px;
+    margin-top: -290px;
+}
+#saima
+{
+    margin-right: -850px;
+    margin-top: -290px;
+}
+#prashant
+{
+    margin-left: 51px;
+    margin-bottom: -390px;
+}
+#swadesh
+{
+    margin-left: -770px;
+    margin-bottom: -390px;
+}
+#sir
+{
+    margin-right: -847px;
+    margin-bottom: -390px;
+} 
+img{
+    border-radius: 40px;
+}
+.box .one:hover .imgbox
+{
+ transform: translateY(20px) scale(0.5);
+ transform-origin: top;
+ transition: 0.5s;
+  
+}
+/* @keyframes scale
+{
+     0%
+     {
+        transform: scale(1);
+     }
+     100%
+     {
+           transform: scale(0.5);
+     }
+} */
+.box .one .content
+{
+    position: absolute;
+ 
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: -220px; */
+   margin-bottom: -10px;
+   padding: 15px;
+   align-items: flex-end;
+  overflow: hidden;
+      transform: translateY(170px);
+   transition: 0.5s;
+   
+}
+.box .one:hover .content
+{
+    transform: translateY(0);
+    transition: 0.5s;
+}
+.box .one .content .info
+{
+    display: flex;
+   transition: 0.9s;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info h3{
+   font-size: 20px;
+   font-weight: 100px;
+   color: aliceblue;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.info span
+{
+    color: rgb(225, 236, 17);
+    font-size: 17px;
+    font-weight: 270px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.social
+{
+    position: relative;
+    margin-top: 5px;
+    display: flex;
+}
+li{
+  list-style: none;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: rgb(18, 18, 23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+
+}
+li:hover
+{
+    transform: rotate(360deg);
+    color: rgb(75, 129, 223);
+}
